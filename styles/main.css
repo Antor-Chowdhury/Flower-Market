@@ -67,10 +67,11 @@
 /* Banner Section */
 
 .banner {
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 120px;
 }
 .banner .banner-content h1 {
   font-family: "Noto Serif", sans-serif;
@@ -78,6 +79,66 @@
   font-size: 65px;
 }
 
+/* Plant Section */
+
+.plant {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  margin-bottom: 210px;
+}
+.plant-content {
+  text-align: center;
+}
+.plant-content h1 {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+.plant-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+  justify-content: center;
+}
+.plant-card {
+  width: 100%;
+  text-align: center;
+}
+.plant-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.plant-card-content {
+  display: flex;
+  flex-direction: column;
+}
+.plant-card-content h4,
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+.plant-card-content h3 {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.plant-card-content button {
+  background: rgb(233, 90, 8);
+  color: white;
+  padding: 20px 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
 /* Responsive Style */
 
 /* Small Device */
@@ -113,5 +174,35 @@
   }
   .banner .banner-content p {
     font-size: 16px;
+  }
+
+  /* Plant Section */
+
+  .plant {
+    flex-direction: column;
+  }
+  .plant-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto 15px;
+  }
+  .plant-content h1 {
+    font-size: 24px;
+  }
+  .plant-content p {
+    font-size: 14px;
+  }
+  .plant-card-content h4,
+  h3 {
+    font-size: 16px;
+  }
+  .plant-card-content h3 {
+    margin-top: 10px;
+  }
+  .plant-card-content button {
+    padding: 18px 30px;
+    font-size: 14px;
+  }
+  .plant-cards-container {
+    gap: 28px 20px;
   }
 }
