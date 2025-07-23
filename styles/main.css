@@ -12,6 +12,21 @@
   margin: auto;
 }
 
+.primary-color-1 {
+  color: #000000;
+}
+
+.primary-color-2 {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.secondary-color {
+  color: rgba(233, 90, 8, 1);
+}
+
 /* Custom Styles */
 
 /* Navbar section */
@@ -22,7 +37,6 @@
   align-items: center;
   margin-top: 30px;
   margin-bottom: 120px;
-  border: 2px solid tomato;
 }
 .navbar-menu ul {
   display: flex;
@@ -50,19 +64,54 @@
   width: 22px;
 }
 
+/* Banner Section */
+
+.banner {
+  border: 2px solid brown;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.banner .banner-content h1 {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+}
+
 /* Responsive Style */
 
 /* Small Device */
 @media screen and (max-width: 576px) {
+  /* Nav Section */
   .navbar {
     margin: 67px 16px 28px;
   }
-
   #menu-design-1,
   #menu-design-2 {
     display: none;
   }
   .navbar img {
     max-width: 63px;
+  }
+
+  /* Banner Section */
+
+  .banner {
+    flex-direction: column-reverse;
+    gap: 28px;
+    text-align: left;
+    margin-bottom: 64px;
+  }
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto 16px;
+    gap: 13px;
+  }
+  .banner .banner-content h1 {
+    font-size: 30px;
+  }
+  .banner .banner-content p {
+    font-size: 16px;
   }
 }
