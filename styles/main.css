@@ -266,7 +266,6 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 100px;
 }
 .join-container {
   /* border: 2px solid tomato; */
@@ -297,6 +296,41 @@ h6 {
 }
 .form button {
   flex: 1;
+}
+
+/* Footer Section */
+
+.footer {
+  /* border: 2px solid tomato; */
+  margin: 50px auto;
+}
+.footer-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 110.67px;
+}
+.footer-right {
+  width: 359px;
+}
+.list ul li {
+  list-style: none;
+}
+.list ul li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: #6b7280;
+}
+.footer-main-container .list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer-link {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* Responsive Style */
@@ -438,14 +472,15 @@ h6 {
   .join-container h3 {
     font-size: 20px;
   }
-  /* .form {
-    width: 321px;
-  }
-  .form input {
-    width: 70%;
-  } */
   .form button {
-    /* width: 100%; */
     padding: 19px 12px;
+  }
+
+  /* Footer Section */
+
+  .footer-main-container {
+    flex-direction: column;
+    gap: 20px;
+    margin: auto 15px;
   }
 }
