@@ -158,9 +158,19 @@ h3 {
   /* border: 2px solid tomato; */
   position: relative;
 }
+.plant-lover-content h2 {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.plant-lover-content ul li {
+  list-style-position: outside;
+  margin: 20px 20px;
+}
 
+/* trust lover badge */
 .trust-badge img {
-  /* border: 2px solid yellow; */
   position: absolute;
   width: 286px;
   height: 286px;
@@ -168,17 +178,17 @@ h3 {
   top: -130px;
   right: 495px;
 }
-
-.plant-lover-content h2 {
-  font-family: "Noto Serif", sans-serif;
-  font-weight: 700;
-  font-size: 50px;
-  margin-bottom: 20px;
+/* trust lover badge animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-.plant-lover-content ul li {
-  list-style-position: outside;
-  margin: 20px 20px;
+.trust-badge img {
+  animation: spin 2.5s linear infinite;
 }
 
 /* Latest Deal content section */
@@ -348,6 +358,14 @@ h6 {
   gap: 24px;
   justify-content: flex-end;
   align-items: center;
+}
+
+/* copyright section */
+.copyright {
+  text-align: center;
+}
+.copyright p {
+  font-size: 18px;
 }
 
 /* Responsive Style */

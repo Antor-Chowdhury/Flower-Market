@@ -79,7 +79,7 @@
             <div class="plant-card-content">
               <h4>Lily Blossom</h4>
               <h3>20 USD</h3>
-              <button class="btn-primary">ADD TO CART</button>
+              <button class="btn-primary add-to-bag">ADD TO CART</button>
             </div>
           </div>
           <div class="plant-card">
@@ -87,7 +87,7 @@
             <div class="plant-card-content">
               <h4>Lily Blossom</h4>
               <h3>20 USD</h3>
-              <button class="btn-primary">ADD TO CART</button>
+              <button class="btn-primary add-to-bag">ADD TO CART</button>
             </div>
           </div>
           <div class="plant-card">
@@ -95,7 +95,7 @@
             <div class="plant-card-content">
               <h4>Lily Blossom</h4>
               <h3>20 USD</h3>
-              <button class="btn-primary">ADD TO CART</button>
+              <button class="btn-primary add-to-bag">ADD TO CART</button>
             </div>
           </div>
           <div class="plant-card">
@@ -103,7 +103,7 @@
             <div class="plant-card-content">
               <h4>Lily Blossom</h4>
               <h3>20 USD</h3>
-              <button class="btn-primary">ADD TO CART</button>
+              <button class="btn-primary add-to-bag">ADD TO CART</button>
             </div>
           </div>
           <div class="plant-card">
@@ -111,7 +111,7 @@
             <div class="plant-card-content">
               <h4>Lily Blossom</h4>
               <h3>20 USD</h3>
-              <button class="btn-primary">ADD TO CART</button>
+              <button class="btn-primary add-to-bag">ADD TO CART</button>
             </div>
           </div>
           <div class="plant-card">
@@ -119,7 +119,7 @@
             <div class="plant-card-content">
               <h4>Lily Blossom</h4>
               <h3>20 USD</h3>
-              <button class="btn-primary">ADD TO CART</button>
+              <button class="btn-primary add-to-bag">ADD TO CART</button>
             </div>
           </div>
           <div class="plant-card">
@@ -127,7 +127,7 @@
             <div class="plant-card-content">
               <h4>Lily Blossom</h4>
               <h3>20 USD</h3>
-              <button class="btn-primary">ADD TO CART</button>
+              <button class="btn-primary add-to-bag">ADD TO CART</button>
             </div>
           </div>
           <div class="plant-card">
@@ -135,7 +135,7 @@
             <div class="plant-card-content">
               <h4>Lily Blossom</h4>
               <h3>20 USD</h3>
-              <button class="btn-primary">ADD TO CART</button>
+              <button class="btn-primary add-to-bag">ADD TO CART</button>
             </div>
           </div>
         </div>
@@ -253,5 +253,23 @@
         </div>
       </div>
     </footer>
+
+    <!-- copyright section -->
+
+    <section class="copyright">
+      <p class="primary-color-2">
+        &copy; 2025 Antor Chowdhury. All rights reserved.
+      </p>
+    </section>
+
+    <!-- Script part -->
+
+    <script>
+      document.querySelectorAll(".add-to-bag").forEach(function (button) {
+        button.addEventListener("click", function () {
+          alert("Flower Added to Cart");
+        });
+      });
+    </script>
   </body>
 </html>
