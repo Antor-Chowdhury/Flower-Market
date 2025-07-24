@@ -27,6 +27,18 @@
   color: rgba(233, 90, 8, 1);
 }
 
+.btn-primary {
+  background: rgb(233, 90, 8);
+  color: white;
+  padding: 20px 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
 /* Custom Styles */
 
 /* Navbar section */
@@ -129,17 +141,6 @@ h3 {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.plant-card-content button {
-  background: rgb(233, 90, 8);
-  color: white;
-  padding: 20px 50px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
-}
 
 /* Plant lover section */
 .plant-lover {
@@ -163,7 +164,7 @@ h3 {
   margin: 20px 20px;
 }
 
-/* Latest Deal section content */
+/* Latest Deal content section */
 
 .latest-deal-content {
   /* border: 2px solid tomato; */
@@ -183,11 +184,11 @@ h3 {
   width: 888px;
 }
 
-/* Latest deal section card */
+/* Latest deal card section */
 
 .latest-deal-card {
   /* border: 2px solid tomato; */
-  margin-bottom: 300px;
+  margin-bottom: 120px;
 }
 .grid-container {
   display: grid;
@@ -249,6 +250,53 @@ h6 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4)),
     url(../assets/deal-zabo.png);
   background-size: cover;
+}
+
+/* Join section */
+
+.join {
+  /* border: 2px solid red; */
+  background-image: url(../assets/news-letter-bg.png);
+  min-height: 533px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.join-container {
+  /* border: 2px solid tomato; */
+  width: 830px;
+  background: transparent;
+}
+.join-container h3,
+.join-container form {
+  background: transparent;
+}
+.join-container h3 {
+  font-family: "Noto Serif", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+.form {
+  display: flex;
+}
+.form input {
+  padding: 8px 20px;
+  width: 80%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+.form button {
+  flex: 1;
 }
 
 /* Responsive Style */
@@ -356,6 +404,7 @@ h6 {
   /* Latest deal section card */
   .latest-deal-card {
     width: 100%;
+    margin-bottom: 44px;
   }
   .grid-container {
     grid-template-columns: 1fr;
@@ -375,5 +424,28 @@ h6 {
   }
   .item:nth-child(3) h6 {
     font-size: 16px;
+  }
+
+  /* Join Section */
+  .join {
+    min-height: 275px;
+  }
+  .join-container {
+    width: 321px;
+    padding: auto 36px;
+    margin: 0 auto;
+  }
+  .join-container h3 {
+    font-size: 20px;
+  }
+  /* .form {
+    width: 321px;
+  }
+  .form input {
+    width: 70%;
+  } */
+  .form button {
+    /* width: 100%; */
+    padding: 19px 12px;
   }
 }
