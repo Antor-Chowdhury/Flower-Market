@@ -156,6 +156,17 @@ h3 {
   gap: 60px;
   margin-bottom: 138px;
   /* border: 2px solid tomato; */
+  position: relative;
+}
+
+.trust-badge img {
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 286px;
+  height: 286px;
+  background: transparent;
+  top: -130px;
+  right: 495px;
 }
 
 .plant-lover-content h2 {
@@ -420,6 +431,9 @@ h6 {
   }
   .plant-lover img {
     width: 100%;
+  }
+  .trust-badge {
+    display: none;
   }
   .plant-lover-content h2 {
     font-size: 24px;
