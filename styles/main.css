@@ -340,6 +340,9 @@ h6 {
 .footer-right {
   width: 359px;
 }
+.footer-right p {
+  margin-top: 16px;
+}
 .list ul li {
   list-style: none;
 }
@@ -365,7 +368,7 @@ h6 {
   text-align: center;
 }
 .copyright p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Responsive Style */
